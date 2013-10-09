@@ -7,7 +7,8 @@ function register_replacement( $link ){
 			$link = $before . '<a href="' . network_home_url('register', 'login') . '">' . __('Register') . '</a>' . $after;
 		else
 			$link = '';
-	} else {
+	} else 
+	{
 		$link = $before . '<a href="' . admin_url() . '">' . __('Site Admin') . '</a>' . $after;
 	}
 	return $link;
